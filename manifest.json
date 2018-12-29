@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "资源监视",
+  "version": "1.0",
+  "description": "监视Cpu跟Ram",
+  "icons": {
+    "16": "",
+    "48": "",
+    "128": ""
+  },
+  "browser_action": {
+    "default_popup": "",
+    "default_icons": {
+      "19": "",
+      "38": ""
+    }
+  },
+  "page_action": {
+  },
+  "author": "pancc",
+  "background": {
+    "persistent": false
+  },
+  "chrome_ui_overrides": {
+    "bookmarks_ui": {
+      "remove_bookmark_shortcut": true,
+      "remove_button": true
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/"
+      ],
+      "js": []
+    }
+  ],
+  "homepage_url": "http://path/to/homepage",
+  "incognito": "spanning 或 split",
+  "permissions": [
+    ""
+  ]
+}
